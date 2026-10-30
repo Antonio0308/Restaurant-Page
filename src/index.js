@@ -1,6 +1,7 @@
 import "./css/styles.css";
 import { homeContent } from "./components/home.js";
 import { footerPage } from "./components/footer.js";
+import { menuContent } from "./components/menu.js";
 
 const btns = document.querySelectorAll("button");
 
@@ -14,4 +15,4 @@ btns.forEach((btn) => {
 });
 
 const content = document.querySelector("#content");
-content.append(homeContent(), footerPage());
+content.append(menuContent(), footerPage());
